@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Formu</title>
+    <style>
+      .error {
+        border: 2px red solid;
+        width: fit-content;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login Formu</h1>
+
+    <form action="/login" method="post">
+      <label for="email">email :</label>
+      <input type="text" />
+
+      <label for="name">Şifreniz:</label>
+      <input type="password" name="password" required />
+
+      <input type="submit" value="Gönder" required />
+    </form>
+    <div id="data"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
