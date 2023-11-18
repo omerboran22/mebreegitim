@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Etietleri</title>
+  </head>
+  <body>
+    <form style="display: none">
+      <input type="text" /> <br />
+      <input type="password" /> <br />
+      <input type="email" /> <br />
+      <input type="checkbox" /> <br />
+      <input type="radio" /><br />
+      <input type="reset" /><br />
+      <input type="submit" value="naber" /><br />
+    </form>
+
+    <!--
+
+      <input>: Kullanıcıdan bilgi almak için kullanılır. type özelliği, hangi türde bir input alınacağını belirler.
+
+        text: Tek satırlık metin girişi.
+        password: Şifre girişi.
+        email: E-posta adresi girişi.
+        checkbox: Onay kutusu.
+        radio: Seçenekler arasında tek bir seçim.
+        file: Dosya yükleme butonu.
+        reset: Formu sıfırlama butonu.
+        submit: Formu gönderme butonu.
+
+
+        <label>: Form elemanlarını açıklamak veya etiketlemek için kullanılır. Kullanıcılar, bu etiketlere tıkladıklarında ilişkili form elemanları seçilir.
+
+        <textarea>: Birden fazla satır metin girişi için kullanılır.
+
+        <select> ve <option>: Bir liste kutusu oluşturur. <select> içindeki <option> elemanları, kullanıcının seçim yapabileceği seçenekleri temsil eder.
+
+    -->
+
+    <form>
+      <div>
+        <label for="username">Text İnput</label>
+        <input type="text" id="username" />
+      </div>
+      <div>
+        <label for="">password İnput</label>
+        <input type="password" />
+      </div>
+      <div>
+        <label for="">email İnput</label>
+        <input type="email" />
+      </div>
+      <div>
+        <label for="">checkbox İnput</label>
+        <input type="checkbox" />
+      </div>
+      <div>
+        <label for="">radio İnput</label>
+        <input type="radio" />
+        <input type="radio" />
+      </div>
+      <div>
+        <label for="">file İnput</label>
+        <input type="file" />
+      </div>
+      <div>
+        <label for="">reset İnput</label>
+        <input type="reset" />
+      </div>
+      <div>
+        <label for="">submit İnput</label>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
