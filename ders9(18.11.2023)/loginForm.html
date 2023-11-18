@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--action="http://localhost:3000/login" method="post"-->
+    <form onsubmit="login(this);return false;" >
+        <div>
+            <label for="">Kullanıcı Adınız</label>
+            <input type="text" name="kuladi">
+        </div>
+        <div>
+            <label for="">Şifreniz</label>
+            <input type="password" name="passw"><br>
+        </div>
+        <input type="submit" value="giriş yap"><br>
+
+        <div>
+            <span id="message"></span>
+        </div>
+        
+    </form>
+
+    <script>
+        const messagebox=document.getElementById("message");
+        const user={
+            kullanici_adi:"ömer",
+            sifre:"1234"
+        }
+        function login(form) {
+            const forms=new FormData(form);
+            const kuladi=forms.get("kuladi")
+            const passw=forms.get("passw")
+
+            if (user.kullanici_adi!=kuladi) {
+                messagebox.innerHTML="Kullanıcı adı Yanlış";
+                return;
+            }
+            if (user.sifre!==passw) {
+                messagebox.innerHTML="Şifre Yanlış";
+                return;
+            }
+            messagebox.innerHTML="Giriş Yapıldı"
+        }
+    </script>
+</body>
+</html>

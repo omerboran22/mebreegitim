@@ -1,0 +1,1 @@
+Bu Ders cumartesi tekrar yapıldı aynı

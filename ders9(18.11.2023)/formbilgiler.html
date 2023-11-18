@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bilgileri Gir</title>
+  </head>
+  <body>
+    <form>
+      <table border="1">
+        <tr>
+          <td>
+            <label for="name">Adınız</label>
+          </td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Soyadınız</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label>Cinsiyet</label></td>
+          <td>
+            <label for="kadin">kadın</label>
+            <input type="radio" id="kadin" name="cinsiyet" />
+            <label for="erkek">erkek</label>
+            <input type="radio" id="erkek" name="cinsiyet" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Resim Yükle</label>
+          </td>
+          <td>
+            <input type="file" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <br /><br />
+    <form style="display: none">
+      <table border="1">
+        <tr>
+          <td>Adınız:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Soyadınız:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Email Adres:</td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <td>Cinsiyet</td>
+          <td>
+            <label for="erkek">erkek</label>
+            <input type="radio" name="Cinsiyet" id="erkek" />
+            <label for="kadin">kadın</label>
+            <input type="radio" name="Cinsiyet" id="kadin" />
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2">Hobiler</th>
+        </tr>
+        <tr>
+          <td>Kitap Okumak</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Spor Yapmak</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Enstrüman Çalmak</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td>Resim Yükle</td>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea cols="30" rows="10"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Okudum,Onayladım. <input type="radio" /></td>
+          <td>Okudum,Onayladım. <input type="radio" /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" /></td>
+          <td><input type="reset" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
