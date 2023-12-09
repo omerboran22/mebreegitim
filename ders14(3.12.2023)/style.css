@@ -1,0 +1,41 @@
+div {
+  margin: 15px;
+}
+
+.kutu {
+  width: 100%;
+  height: 150px;
+  background-color: red;
+  color: white;
+}
+
+.kutu-2 {
+  width: 150px;
+  height: 100px;
+  background: aqua;
+}
+
+.kutu-3 {
+  width: 300px;
+  background-color: yellow;
+  height: 250px;
+}
+
+.anakutu {
+  width: 100%;
+  height: 250px;
+  background-color: green;
+}
+
+.cocuk-kutu {
+  width: 15%;
+  height: 75%;
+  background-color: blue;
+}
+
+/* 2. Yöntem */
+.kutuekran {
+  width: 50vw; /* Ekran genişliğinin yarısı */
+  height: 50vh; /* Ekran yüksekliğinin yarısı */
+  background-color: violet;
+}

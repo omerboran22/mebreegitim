@@ -1,0 +1,27 @@
+.anakutu {
+  width: 120px;
+  height: 100%;
+  border-width: 25px;
+  border-style: solid;
+  /* sol çizginin özellikleri */
+  border-left-color: green;
+  border-left-width: 10px;
+  /* sağ çizginin özellikleri */
+  border-right-color: blue;
+  border-right-width: 30px;
+  border-right-style: dashed;
+  /* üst çizginin özellikleri */
+  border-top-color: yellow;
+  /* alt çizginin özellikleri */
+  border-bottom-color: black;
+  /* köşe yuvarlama */
+  border-radius: 15% 0;
+  display: inline-block;
+}
+
+.kutu {
+  width: 100px;
+  height: 100px;
+  margin: 15px 0 25px 1px;
+  background-color: red;
+}
