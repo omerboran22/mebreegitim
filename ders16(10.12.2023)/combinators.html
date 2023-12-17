@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <style>
+      /*
+        "div p" seçicisi, <div> içindeki <p> öğelerini seçer.
+      */
+      div p {
+        background-color: yellow;
+      }
+      /*
+        "div > p" seçicisi, <p> elementlerini <div> elementlerinin içindeki <p> elementlerini seçer.
+      */
+      div > p {
+        background-color: red;
+      }
+      /*
+        "div + h2" seçicisi, "div" elementinden sonra gelen ilk "h2" elementini seçer.
+      */
+      div + h2 {
+        background-color: blue;
+      }
+      /*
+        "h2 ~ p" seçicisi, "p" elementinden sonra gelen tüm "ul" elementlerini seçer.
+      */
+      h2 ~ p {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>paragraf 1</p>
+      <section>
+        <p>iç paragraf 1</p>
+      </section>
+      <p>paragraf 2</p>
+    </div>
+    <h2>başlık 1</h2>
+    <p>paragraf 3</p>
+    <p>paragraf 4</p>
+    <p>paragraf 5</p>
+  </body>
+</html>

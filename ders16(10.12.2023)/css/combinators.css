@@ -1,0 +1,35 @@
+/*
+Bu, bir h2 öğesinden sonra gelen ilk p öğesini seçer ve rengini kırmızı yapar.
+*/
+h2 + p {
+  color: red;
+}
+
+/*Bu, herhangi bir h2 öğesinden sonra gelen tüm p öğelerini kalın yapar.*/
+h2 ~ p {
+  font-weight: bold;
+}
+
+/*Bu, h2 öğesinin doğrudan çocuğu olan tüm p öğelerini sarı yapar.*/
+h2 > p {
+  background-color: yellow;
+}
+
+/*Bu, section öğesine altındaki tüm div öğelerine mavi bir kenarlık ekler.*/
+section div {
+  border: 1px solid blue;
+}
+
+div * {
+  border: 1px solid blue;
+  width: fit-content;
+  height: 50px;
+  text-align: center;
+}
+
+body > * {
+  border: 1px solid blue;
+  width: fit-content;
+  height: max-content;
+  text-align: center;
+}

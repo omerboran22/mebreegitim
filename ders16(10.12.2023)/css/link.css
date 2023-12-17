@@ -23,6 +23,7 @@
 .link-seccondary {
   color: #fff;
   text-decoration: none;
+  cursor: wait;
   background-color: #a98d0f;
   padding: 5px;
 }
@@ -36,8 +37,9 @@
 }
 
 .link-outline-primary:hover {
+  /* fare üzerine geldiğinde kontrol eder*/
   background-color: #007bff;
-  color: #fff;
+  color: #fff !important;
 }
 
 .cursor-pointer {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outline</title>
+    <style>
+      p {
+        margin: 2rem 0;
+      }
+      .color-red {
+        outline-color: red;
+      }
+      .color-blue {
+        outline-color: blue;
+      }
+      .outline-style-dotted {
+        outline-style: inset;
+      }
+      .outline-style-dashed {
+        outline-style: outset;
+      }
+      .outline-width-thick {
+        outline-width: thick;
+      }
+      .offset-1 {
+        outline-offset: 5px;
+      }
+      .offset-2 {
+        outline-offset: 10px;
+      }
+      .radius {
+        border-radius: 10px;
+      }
+      .outline-1 {
+        outline: black solid thick;
+      }
+    </style>
+  </head>
+  <body style="padding: 10px">
+    <p class="color-red outline-style-dotted offset-1 radius outline-width-thick">Dış Renk Kırmızı</p>
+
+    <p class="color-blue outline-width-thick outline-style-dashed offset-2">Dış Renk Mavi</p>
+
+    <p class="outline-1">Dış Renk Siyah</p>
+  </body>
+</html>
