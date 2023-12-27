@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Spacing</title>
+    <style>
+      body {
+        color: gray;
+        background-color: black;
+      }
+      h2 {
+        color: red;
+      }
+      div {
+        border: 1px solid gray;
+        margin: 5px;
+        padding: 15px;
+      }
+
+      /*
+        text-indent Kullanımı
+        aldığı değerler 
+        normal
+        <length> px ölçü birimi kullanılır
+        <percentage> % kullanılır
+        inherit
+      */
+      p.txt-indent {
+        text-indent: 50px;
+      }
+
+      /*
+        letter-spacing Kullanımı
+        aldığı değerler 
+        normal
+        <length> px ölçü birimi kullanılır
+        <percentage> % kullanılır
+        inherit
+      */
+      h1.letter-spacing-1 {
+        letter-spacing: 5px;
+      }
+
+      h2.letter-spacing-2 {
+        letter-spacing: -2px;
+      }
+
+      /*
+        line-height Kullanımı
+        aldığı değerler 
+        normal
+        <number> 1.2 gibi
+        <length> px ölçü birimi kullanılır
+        <percentage> % kullanılır
+        inherit 
+      */
+      p.small {
+        line-height: 0.7;
+      }
+
+      p.big {
+        line-height: 1.8;
+      }
+
+      /*
+        word-spacing Kullanımı
+        aldığı değerler 
+        normal
+        <length> px ölçü birimi kullanılır
+        <percentage> % kullanılır
+        inherit 
+      */
+      p.word-spacing-1 {
+        word-spacing: 10px;
+      }
+
+      p.word-spacing-2 {
+        word-spacing: -2px;
+      }
+
+      /*
+        white-space Kullanımı
+        aldığı değerler 
+          normal: Varsayılan değerdir. Boşlukları normal şekilde işlenir.
+          nowrap: Boşluklar birleştirilir ve metin bir satırda tutulur.
+          pre: Boşluklar korunur ve metin orijinal biçiminde tutulur.
+          pre-wrap: Boşluklar korunur, ancak metin satır sonuna geldiğinde yeni bir satıra geçer.
+          pre-line: Boşluklar korunur, ancak metin yeni bir satıra geçtiğinde boşluklar birleştirilir.
+          break-spaces: Boşluklar, karakterlerle aynı şekilde işlenir.
+      */
+      p.no-wrap {
+        white-space: nowrap;
+      }
+      p.wrap {
+        white-space: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>text-indent Kullanımı</h2>
+      <p class="txt-indent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus, quibusdam, quia, quos voluptatem
+        voluptatum quod exercitationem quas voluptates quidem dolorum. Quisquam voluptatibus, quibusdam, quia, quos
+        voluptatem voluptatum quod exercitationem quas voluptates quidem dolorum.
+      </p>
+    </div>
+
+    <div>
+      <h2>letter-spacing Kullanımı</h2>
+      <h1 class="letter-spacing-1">Yazının harf aralıkları fazla</h1>
+      <h3 class="letter-spacing-2">yazının harf aralıkları yapışık</h3>
+    </div>
+    <div>
+      <h2>line-height Kullanımı</h2>
+      <p class="small">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus, quibusdam, quia, quos voluptatem
+        voluptatum quod exercitationem quas voluptates quidem dolorum. Quisquam voluptatibus, quibusdam, quia, quos
+        voluptatem voluptatum quod exercitationem quas voluptates quidem dolorum.
+      </p>
+      <p class="big">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus, quibusdam, quia, quos voluptatem
+        voluptatum quod exercitationem quas voluptates quidem dolorum. Quisquam voluptatibus, quibusdam, quia, quos
+        voluptatem voluptatum quod exercitationem quas voluptates quidem dolorum.
+      </p>
+    </div>
+    <div>
+      <h2>word-spacing Kullanımı</h2>
+      <p>Paragrafın Normal Hali</p>
+      <p class="word-spacing-1">Paragrafın Uzun Hali.</p>
+      <p class="word-spacing-2">Paragrafın Kısa Hali.</p>
+    </div>
+    <div>
+      <h2>white-space Kullanımı</h2>
+      <p class="no-wrap">
+        This is some text that will not wrap. This is some text that will not wrap. This is some text that will not
+        wrap. This is some text that will not wrap. This is some text that will not wrap. This is some text that will
+        not wrap. This is some text that will not wrap. This is some text that will not wrap. This is some text that
+        will not wrap.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Link 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+      }
+      .top-bar h1 {
+        color: #fff;
+      }
+      .top-bar nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+      }
+      .top-bar ul {
+        display: flex;
+        list-style: none;
+      }
+      .top-bar ul li {
+        margin: 0 10px;
+      }
+      .top-bar ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px;
+        border: 1px solid #fff;
+      }
+      .top-bar ul li a:hover {
+        color: #333;
+        background-color: #fff;
+      }
+      .top-bar div a img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 25%;
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+      }
+      .shop-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        width: 100%;
+        padding: 10px;
+      }
+      .shop-bar a {
+        display: block;
+        border-radius: 25%;
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+      }
+      .shop-bar a img {
+        display: block;
+        width: 75px;
+        height: 75px;
+        border-radius: 25%;
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <h1>Ömer Can Boran</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">İletişim</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <div>
+            <a href="#">
+              <img src="./logo.png" alt="" />
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="shop-bar">
+        <a href="#"> <img src="./logo.png" alt="" /></a>
+        <a href="#"> <img src="./logo.png" alt="" /></a>
+        <a href="#"> <img src="./logo.png" alt="" /></a>
+        <a href="#"> <img src="./logo.png" alt="" /></a>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+body {
+  background-color: black;
+  color: gray;
+}
+section {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+a {
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+/* tüm link */
+a:link {
+  color: #ff0000;
+}
+
+/* ziyaret edilen link */
+a:visited {
+  color: #00ff00;
+}
+
+/* mouse üzerine geldiğinde link */
+a:hover {
+  color: #ff00ff;
+}
+
+/* seçildiğinde link */
+a:active {
+  color: #0000ff;
+}
+
+.hello {
+  display: none;
+  background-color: yellow;
+  padding: 10px;
+}
+
+.hoverMe:hover .hello {
+  display: block;
+}
+
+p:first-child {
+  color: red;
+}
+
+p:last-child {
+  color: blue;
+}
+
+p:nth-child(2) {
+  color: green;
+}
+
+input:focus {
+  outline: none;
+  border-color: red;
+}
+input:checked + div {
+  display: block !important;
+  color: green;
+}
