@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 body {
@@ -27,7 +27,7 @@ nav {
 }
 
 .navbar-1 {
-  background-color: rgb(0, 204, 255);
+  background-color: rgba(red, green, blue, 0.5);
   padding: 10px 0px;
 }
 

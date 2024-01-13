@@ -5,55 +5,45 @@ body {
 section {
   margin: 10px;
   padding: 10px;
-  border: 1px solid gray;
+  border: 1pxsolidgray;
 }
 a {
   padding: 5px;
-  border: 1px solid gray;
+  border: 1pxsolidgray;
 }
-
-/* tüm link */
+/*tümlink*/
 a:link {
-  color: #ff0000;
+  color: red;
 }
-
-/* ziyaret edilen link */
+/*ziyaretedilenlink*/
 a:visited {
   color: #00ff00;
 }
-
-/* mouse üzerine geldiğinde link */
+/*mouseüzerinegeldiğindelink*/
 a:hover {
   color: #ff00ff;
 }
-
-/* seçildiğinde link */
+/*seçildiğindelink*/
 a:active {
   color: #0000ff;
 }
-
 .hello {
   display: none;
   background-color: yellow;
   padding: 10px;
 }
-
-.hoverMe:hover .hello {
+.hoverMe:hover.hello {
   display: block;
 }
-
 p:first-child {
   color: red;
 }
-
 p:last-child {
   color: blue;
 }
-
 p:nth-child(2) {
   color: green;
 }
-
 input:focus {
   outline: none;
   border-color: red;

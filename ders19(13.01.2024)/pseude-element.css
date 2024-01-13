@@ -1,0 +1,64 @@
+.container {
+  width: 500px;
+  height: fit-content;
+  border: 1px solid black;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+.container:hover::before,
+.container:hover::after {
+  content: '🎄🎁🎇';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+p::first-letter {
+  color: red;
+  font-size: 30px;
+}
+p::first-line {
+  color: blue;
+  font-size: 20px;
+}
+
+p::selection {
+  background-color: green;
+  color: white;
+}
+
+ul li:first-child::marker {
+  content: '🖊';
+  font-size: 25px;
+}
+ul li:nth-child(2)::marker {
+  content: '🗒';
+  font-size: 25px;
+}
+ul li:last-child::marker {
+  content: '👜';
+  font-size: 25px;
+}
+
+.form {
+  width: 80%;
+  height: 70px;
+  border: 1px solid black;
+}
+
+.form input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form input:focus::placeholder {
+  color: red;
+  font-size: 20px;
+}
