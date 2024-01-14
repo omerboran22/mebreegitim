@@ -1,0 +1,138 @@
+div {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-right: 20px;
+}
+body {
+  display: flex;
+}
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: block;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.btn-dark {
+  background-color: #343a40;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: #007bff;
+}
+
+/* btn outline */
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: white;
+}
+
+.btn-outline-info {
+  color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.btn-outline-info:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.btn-outline-light {
+  color: #aba8a8;
+  border-color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.btn-outline-dark {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: white;
+}
