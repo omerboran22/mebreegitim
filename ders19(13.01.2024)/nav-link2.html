@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: block;
+        width: 100%;
+        height: 300px;
+        background-color: #333;
+      }
+      h2 {
+        width: 25%;
+        display: inline-block;
+        color: #fff;
+      }
+      nav {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+      }
+      nav ul {
+        display: block;
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 5px;
+        margin: 0 5px;
+      }
+      nav ul li:hover {
+        background-color: #fff;
+      }
+      nav ul li:hover a {
+        color: #333;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .user-logo {
+        display: inline-block;
+        width: 23%;
+        text-align: right;
+        margin: 5px;
+      }
+      .user-logo img {
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Ömer Can Boran</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">İlteşim</a></li>
+        </ul>
+      </nav>
+      <div class="user-logo">
+        <a href="#">
+          <img src="./logo.png" alt="" />
+        </a>
+      </div>
+    </header>
+  </body>
+</html>

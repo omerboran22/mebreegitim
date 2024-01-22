@@ -13,7 +13,6 @@
   width: 20px;
   height: 20px;
 }
-
 p::first-letter {
   color: red;
   font-size: 30px;
@@ -22,12 +21,10 @@ p::first-line {
   color: blue;
   font-size: 20px;
 }
-
 p::selection {
   background-color: green;
   color: white;
 }
-
 ul li:first-child::marker {
   content: '🖊';
   font-size: 25px;
@@ -40,13 +37,11 @@ ul li:last-child::marker {
   content: '👜';
   font-size: 25px;
 }
-
 .form {
   width: 80%;
   height: 70px;
   border: 1px solid black;
 }
-
 .form input {
   display: block;
   margin: 0 auto;
