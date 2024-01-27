@@ -5,7 +5,6 @@ My name is Ömer Can Boran and I'm passionate about web development.
 ## About Me
 
 - 🌐 [Personal Website](is comming)
-- 📧 Email: is coming
 <!--
 
 ## Projects
