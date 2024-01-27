@@ -1,0 +1,16 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  margin: 50px;
+}
+
+/* Standart gölge */
+.box-shadow {
+  box-shadow: 8px 8px 5px 10px rgba(176, 73, 73, 0.5), -4px -4px 5px 10px rgba(65, 244, 0, 0.5);
+}
+
+/* İçeri yerleştirilmiş (inset) gölge */
+.inset-box-shadow {
+  box-shadow: inset 5px 5px 10px #888888;
+}
