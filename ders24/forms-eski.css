@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.form-basic {
+  max-width: 550px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 25px;
+  background: #fafafa;
+  border-radius: 7px;
+}
+
+.form-group {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group .form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group .form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group .form-select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-check {
+  display: block;
+  width: 100%;
+}
+
+.form-check .form-check-label {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-check .form-check-input {
+  display: inline-block;
+  width: auto;
+  border: none;
+  border-radius: 3px;
+  background: #f0f0f0;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #333;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}

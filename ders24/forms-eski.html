@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="./forms-eski.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section>
+      <form class="form-basic" method="post" target="_blank" action="http://localhost:3000/submit-form">
+        <div class="form-group">
+          <label for="" class="form-label">İsminiz</label>
+          <input class="form-control" tabindex="1" placeholder="ömer" type="text" name="isim" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Soyisminiz</label>
+          <input class="form-control" tabindex="2" placeholder="boran" type="text" name="soyisim" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">E-posta Adresiniz <i class="fa-solid fa-envelope"></i></label>
+          <input class="form-control" tabindex="3" placeholder="omerboran@gmail.com" type="text" name="email" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Kullanıcı Adı <i class="fa-solid fa-user"></i></label>
+          <input class="form-control" tabindex="4" placeholder="omerboran1" type="text" name="username" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Şifreniz</label>
+          <input class="form-control" tabindex="5" placeholder="******" type="password" name="sifre" />
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Cinsiyetiniz <i class="fa-solid fa-venus-mars"></i></label>
+          <select name="cinsiyet" id="" tabindex="6" class="form-select">
+            <option value="erkek">Erkek</option>
+            <option value="kadin">Kadın</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Mesleğiniz <i class="fa-solid fa-user-tie"></i></label>
+          <select name="meslek" id="" class="form-select" tabindex="6">
+            <option value="ogrenci">Öğrenci</option>
+            <option value="ogretmen">Öğretmen</option>
+            <option value="muhendis">Mühendis</option>
+            <option value="doktor">Doktor</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="" class="form-label">Hobileriniz</label>
+          <div class="form-check">
+            <input type="checkbox" id="yuzme" class="form-check-input" name="hobi" value="yuzme" />
+            <label for="yuzme" class="form-check-label">Yüzme</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="kosma" class="form-check-input" name="hobi" value="kosma" />
+            <label for="kosma" class="form-check-label">Koşma</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="kitapokuma" class="form-check-input" name="hobi" value="kitap okuma" />
+            <label for="kitapokuma" class="form-check-label">Kitap Okuma</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="yemekYapma" class="form-check-input" name="hobi" value="yemek yapma" />
+            <label for="yemekYapma" class="form-check-label"> Yemek Yapma</label>
+          </div>
+          <button class="btn btn-primary btn-block">Kayıt Ol <i class="fa-solid fa-user-plus"></i></button>
+        </div>
+      </form>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

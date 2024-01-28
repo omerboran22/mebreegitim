@@ -1,0 +1,123 @@
+/*
+container
+form-basic
+form-group
+form-label
+form-control
+form-select
+form-check-control
+form-radio-group
+form-check-group
+btn
+btn-primary
+btn-warning
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.form-basic {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-radio-group {
+  width: 100%;
+  display: block;
+}
+
+.form-radio-group:first-child {
+  margin-bottom: 20px;
+}
+
+.form-control-radio {
+  display: inline-block;
+}
+
+.form-radio-label {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-check-group {
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+}
+
+.form-check-control {
+  display: inline-block;
+}
+
+.form-label-check {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-group {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-warning {
+  background-color: #f0f0f0;
+  color: #333;
+}

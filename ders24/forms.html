@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayıt Formu</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <section class="container">
+      <form class="form-basic">
+        <div class="form-group">
+          <label class="form-label" for="name">İsminiz</label>
+          <input class="form-control" type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="lastname">Soyİsminiz</label>
+          <input class="form-control" type="text" id="lastname" name="lastname" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="username">Kullancı Adı</label>
+          <input class="form-control" type="text" id="username" name="username" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">E-postanız</label>
+          <input class="form-control" type="email" id="email" name="email " />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password">Şifreniz</label>
+          <input class="form-control" type="password" id="password" name="password" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="">Cinsiyetiniz</label>
+          <div class="form-radio-group">
+            <input class="form-control-radio" type="radio" name="gender" id="genderMale" />
+            <label class="form-radio-label" for="genderMale">Erkek</label>
+          </div>
+          <div class="form-radio-group">
+            <input class="form-control-radio" type="radio" name="gender" id="genderfeMale" />
+            <label class="form-radio-label" for="genderfeMale">Kadın</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="">Mesleğiniz</label>
+          <select name="jobs" id="" class="form-select">
+            <option value="Öğrenci">Öğrenci</option>
+            <option value="Öğretmen">Öğretmen</option>
+            <option value="Doktor">Doktor</option>
+            <option value="Mühendis">Mühendis</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="">Hobileriniz</label>
+          <div class="form-check-group">
+            <input class="form-check-control" type="checkbox" />
+            <label class="form-label-check" for="">Kitap Okumak</label>
+          </div>
+          <div class="form-check-group">
+            <input class="form-check-control" type="checkbox" />
+            <label class="form-label-check" for="">Futbol Oynamak</label>
+          </div>
+          <div class="form-check-group">
+            <input class="form-check-control" type="checkbox" />
+            <label class="form-label-check" for="">Yüzmek</label>
+          </div>
+          <div class="form-check-group">
+            <input class="form-check-control" type="checkbox" />
+            <label class="form-label-check" for="">Tenis Oynamak</label>
+          </div>
+        </div>
+        <div class="button-group">
+          <button type="reset" class="btn btn-warning">Formu Sıfırla</button>
+          <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

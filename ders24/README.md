@@ -1,0 +1,1 @@
+Bu Ders Öğrendiğimizleri Tekrar edeceğimiz,örnek projeler yapacağız.
