@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      .container {
+        width: 100%;
+        height: fit-content;
+        border: 1px solid black;
+        padding: 5px;
+        margin: 5px 0;
+      }
+      .card {
+        width: 100%;
+        height: 100%;
+        border: 5px solid red;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+      .p-relative {
+        position: relative;
+      }
+      .p-absolute {
+        position: absolute;
+        top: 0px;
+        right: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="card p-relative">
+        <p></p>
+        <div class="box p-absolute"></div>
+      </div>
+    </section>
+  </body>
+</html>

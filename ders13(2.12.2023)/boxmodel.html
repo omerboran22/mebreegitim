@@ -6,6 +6,11 @@
     <title>Document</title>
     <style>
       .anakutu1 {
+        /*
+        320+15+15+10+10=370
+        box-sizing: border-box; olur ise 
+        content(270)+15+15+10+10=320
+        */
         border: 10px solid black;
         width: 320px;
         height: 150px;
@@ -23,7 +28,7 @@
     <div class="anakutu1" style="box-sizing: border-box">
       <div class="ickutu1">genişlik(270)+border(20)+padding(30)=320px</div>
     </div>
-    <div class="anakutu1" style="box-sizing: content-box">
+    <div class="anakutu1">
       <div class="ickutu1">genişlik(320)+border(20)+padding(30)=370px</div>
     </div>
   </body>

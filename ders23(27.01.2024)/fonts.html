@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fontlar</title>
+    <title>Fonts Kullanımı</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
-      .font-moirai {
-        font-family: 'Moirai One';
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
     </style>
-    <link rel="stylesheet" href="style.css" />
-
     <style>
-      @font-face {
-        src: url('./fonts/Honk-Regular.ttf');
-        font-family: 'Honk Regular';
+      .font-poor-story {
+        font-family: 'Poor Story', cursive;
       }
-
-      .font-myfont {
-        font-family: 'Honk Regular';
+      .font-protest-riot {
+        font-family: 'protest riot', sans-serif;
+      }
+      @font-face {
+        font-family: 'benim-fontum';
+        src: url('./fonts/ProtestRiot-Regular.ttf') format('truetype');
+      }
+      .font-benim-fontum {
+        font-family: 'benim-fontum';
       }
     </style>
   </head>
   <body>
-    <h1 class="font-myfont">Merhaba Dünya myfont</h1>
-    <h1 class="font-rubik">Merhaba Dünya rubik</h1>
-    <h2 class="font-moirai">Merhaba Dünya moirai</h2>
-    <h3 class="font-rubik-burned">Merhaba Dünya</h3>
+    <p class="font-poor-story">Merhaba Dünya</p>
+    <p class="font-protest-riot">Merhaba Dünya</p>
+    <p class="font-benim-fontum">Merhaba Dünya</p>
   </body>
 </html>

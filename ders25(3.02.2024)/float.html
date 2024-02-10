@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating</title>
+    <style>
+      .float-left {
+        float: left;
+        width: 40%;
+        height: 50px;
+        background-color: gray;
+      }
+      .float-right {
+        float: right;
+        width: 40%;
+        height: 50px;
+        background-color: gray;
+      }
+      .clearfix {
+        clear: both;
+      }
+      div {
+        margin: 0 10px;
+      }
+      .float-me {
+        float: left;
+        background-color: grey;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="float-left"></div>
+      <div class="float-right"></div>
+    </section>
+    <div class="clearfix"></div>
+    <section>
+      <p>
+        <span class="float-me">Floatla Beni</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eius quaerat omnis facere ipsum aut culpa
+        quisquam, accusamus deleniti sapiente officia dignissimos neque? Perferendis fugiat debitis sed nobis
+        accusantium exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eius quaerat omnis
+        facere ipsum aut culpa quisquam, accusamus deleniti sapiente officia dignissimos neque? Perferendis fugiat
+        debitis sed nobis accusantium exercitationem.
+      </p>
+    </section>
+  </body>
+</html>

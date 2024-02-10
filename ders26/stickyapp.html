@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sticky</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+      header {
+        position: sticky;
+        top: 5px;
+        background-color: #f4f4f4;
+        padding: 10px 0;
+        font-size: 25px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+      }
+      nav ul li a[href='#sec-1'] {
+        color: #ff0000;
+      }
+      nav ul li a[href='#sec-2'] {
+        color: #46acbd;
+      }
+      nav ul li a[href='#sec-3'] {
+        color: #c917a9;
+      }
+      nav ul li a[href='#sec-4'] {
+        color: #0f3aa9;
+      }
+      .container {
+        height: 100vh;
+        color: white;
+        font-size: 25px;
+        padding: 25px;
+      }
+      #sec-1 {
+        background-color: rgba(255, 0, 0, 0.1);
+      }
+      #sec-2 {
+        background-color: rgba(70, 171, 189, 0.099);
+      }
+      #sec-3 {
+        background-color: rgba(201, 23, 168, 0.113);
+      }
+      #sec-4 {
+        background-color: rgba(15, 59, 169, 0.109);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#sec-1">Anasayfa</a></li>
+          <li><a href="#sec-2">Blog</a></li>
+          <li><a href="#sec-3">Hakkımızda</a></li>
+          <li><a href="#sec-4">İletşim</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="container" id="sec-1"></section>
+      <section class="container" id="sec-2"></section>
+      <section class="container" id="sec-3"></section>
+      <section class="container" id="sec-4"></section>
+    </main>
+  </body>
+</html>
