@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .form-group input[type='text'] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      .form-group input[type='email'] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      .form-group input[type='password'] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      .form-group input[type='submit'] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="useranme">Kullanıcı Adı:</label>
+          <input type="text" id="useranme" name="useranme" placeholder="omerboran22" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Şifre:</label>
+          <input type="password" id="password" name="password" placeholder="*******" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Giriş Yap" />
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="FirstName">Adınız:</label>
+          <input type="text" id="FirstName" name="FirstName" placeholder="Ömer Can" required />
+        </div>
+        <div class="form-group">
+          <label for="LastName">Soyadınız:</label>
+          <input type="text" id="LastName" name="LastName" placeholder="Boran" required />
+        </div>
+        <div class="form-group">
+          <label for="useranme">Kullanıcı Adı:</label>
+          <input type="text" id="useranme" name="useranme" placeholder="omerboran22" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Kullanıcı Adı:</label>
+          <input type="email" id="email" name="email" placeholder="omerboran22@gmail.com" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Şifre:</label>
+          <input type="password" id="password" name="password" placeholder="*******" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Şifre Tekrarı:</label>
+          <input type="password" id="password" name="password" placeholder="*******" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Kayıt Ol" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

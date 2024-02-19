@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed</title>
+
+    <style>
+      body {
+        height: 300px;
+      }
+      .fixed {
+        position: fixed;
+      }
+
+      .z-1 {
+        background-color: rgba(255, 0, 0, 0.8);
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 3;
+        width: 100px;
+        height: 100px;
+      }
+
+      .z-2 {
+        background-color: rgba(0, 255, 0, 0.8);
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 2;
+
+        width: 200px;
+        height: 100px;
+      }
+
+      .z-3 {
+        background-color: rgba(0, 0, 255, 0.8);
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+
+        width: 300px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae delectus beatae, voluptatibus commodi aliquam
+      numquam consectetur repellat aspernatur ab a soluta. Odio voluptas quod eveniet? Praesentium eaque culpa saepe
+      facilis!
+    </p>
+    <div class="box fixed z-1"></div>
+    <div class="box fixed z-2"></div>
+    <div class="box fixed z-3"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae delectus beatae, voluptatibus commodi aliquam
+      numquam consectetur repellat aspernatur ab a soluta. Odio voluptas quod eveniet? Praesentium eaque culpa saepe
+      facilis!
+    </p>
+  </body>
+</html>

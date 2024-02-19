@@ -6,27 +6,35 @@
     <title>background Gradient</title>
     <style>
       .bg-gradient-1 {
-        background: linear-gradient(90deg, red, yellow, green, blue, purple);
+        background: 
+        linear-gradient(45deg, 
+        red 10%, 
+        yellow 20%,
+        green 30%,
+        blue 50%, 
+        purple 60%);
         width: 100%;
         height: 800px;
       }
       .bg-gradient-2 {
-        background: linear-gradient(45deg, red, yellow, green, blue, purple);
+        background: linear-gradient(to left, red, yellow, green, blue, purple);
         width: 100%;
         height: 800px;
       }
       .bg-gradient-3 {
-        background: linear-gradient(135deg, red, yellow, green, blue, purple);
+        background-image: linear-gradient(to top right, red, yellow, green, blue, purple);
         width: 100%;
         height: 800px;
       }
 
       /* Merkezden dışa doğru mavi renkten beyaz renge doğru bir geçiş */
       .element {
-        background: radial-gradient(circle, #3498db, #ffffff);
+        background: radial-gradient(circle, #3498db, #fa0000);
+        width: 100%;
+        height: 800px;
       }
       .bg-gradient-4 {
-        background: linear-gradient(to left top, red, yellow);
+        background-image: repeating-linear-gradient(to left top, red 10%, yellow 10%);
         width: 100%;
         height: 800px;
       }
@@ -49,9 +57,10 @@
     <div class="bg-gradient-2"></div>
     <div class="bg-gradient-3"></div>
     <div class="bg-gradient-4"></div>
-    <div class="bg-gradient-1 opacity-1"></div>
-    <div class="bg-gradient-2 opacity-5"></div>
-    <div class="bg-gradient-3 opacity-9"></div>
-    <div class="bg-gradient-1 opacity"></div>
+    <div class="element"></div>
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+    <div class="bg-gradient-3"></div>
+    <div class="bg-gradient-1"></div>
   </body>
 </html>

@@ -3,40 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sticky</title>
+    <title>Stick CSS</title>
     <style>
-      .sticky-1 {
+      .sticky {
         position: sticky;
-        top: 0;
-        left: 10px;
       }
-      .sticky-2 {
-        position: sticky;
-        top: 25px;
+      .top-10 {
+        top: 10px;
+      }
+      .top-50 {
+        top: 50px;
+      }
+      .left-100 {
         left: 100%;
       }
+      .z-1 {
+        z-index: 1;
+      }
+      .z-2 {
+        z-index: 2;
+      }
       p {
-        height: 500px;
+        height: 1000px;
       }
     </style>
   </head>
   <body>
-    <img src="https://picsum.photos/600/600" class="sticky-1" />
-    <img src="https://picsum.photos/800/400" class="sticky-2" />
+    <img class="sticky top-10 z-1" src="https://picsum.photos/400/400" alt="" />
+    <img class="sticky top-50 z-2 left-100" src="https://picsum.photos/400/500" alt="" />
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore sunt, unde eum magni mollitia. Suscipit
-      mollitia nam molestias pariatur, beatae molestiae reprehenderit necessitatibus. Autem consequuntur molestias ut ab
-      aliquam!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta ratione dolore voluptate unde officia et a?
+      Provident eaque ad consequuntur consectetur, necessitatibus fuga, incidunt eveniet voluptatem maxime itaque
+      praesentium?
     </p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore sunt, unde eum magni mollitia. Suscipit
-      mollitia nam molestias pariatur, beatae molestiae reprehenderit necessitatibus. Autem consequuntur molestias ut ab
-      aliquam!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolore sunt, unde eum magni mollitia. Suscipit
-      mollitia nam molestias pariatur, beatae molestiae reprehenderit necessitatibus. Autem consequuntur molestias ut ab
-      aliquam!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sint ab aliquid. Voluptatem voluptatum iste ipsam,
+      dolorem quo temporibus necessitatibus? Libero quod hic fuga quo praesentium autem soluta laboriosam quaerat.
     </p>
   </body>
 </html>

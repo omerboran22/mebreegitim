@@ -1,64 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fixed</title>
-
+    <title>Fixed CSS</title>
     <style>
-      body {
-        height: 300px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .w-20 {
+        width: 200px;
+      }
+      .w-30 {
+        width: 300px;
+      }
+      .w-40 {
+        width: 400px;
+      }
+      .h-10 {
+        height: 100px;
       }
       .fixed {
         position: fixed;
       }
-
+      .bg-green {
+        background-color: rgba(0, 128, 0, 1);
+      }
+      .bg-red {
+        background-color: rgba(255, 0, 0, 1);
+      }
+      .bg-blue {
+        background-color: rgba(0, 0, 255, 1);
+      }
       .z-1 {
-        background-color: rgba(255, 0, 0, 0.3);
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 3;
-        width: 100px;
-        height: 100px;
-      }
-
-      .z-2 {
-        background-color: rgba(0, 255, 0, 0.3);
-        position: fixed;
-        top: 15px;
-        left: 15px;
-        z-index: 2;
-
-        width: 200px;
-        height: 100px;
-      }
-
-      .z-3 {
-        background-color: rgba(0, 0, 255, 0.3);
-        position: fixed;
-        top: 20px;
-        left: 20px;
         z-index: 1;
-
-        width: 300px;
-        height: 100px;
+        top: 10px;
+      }
+      .z-2 {
+        z-index: 2;
+        top: 40px;
+      }
+      .z-3 {
+        z-index: 3;
+        top: 60px;
       }
     </style>
   </head>
   <body>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae delectus beatae, voluptatibus commodi aliquam
-      numquam consectetur repellat aspernatur ab a soluta. Odio voluptas quod eveniet? Praesentium eaque culpa saepe
-      facilis!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde architecto voluptate consequuntur quia soluta quis
+      ad voluptatum provident excepturi id! Non, numquam magnam consequatur culpa expedita tempore voluptates obcaecati
+      fugiat.
     </p>
-    <div class="box fixed z-1"></div>
-    <div class="box fixed z-2"></div>
-    <div class="box fixed z-3"></div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae delectus beatae, voluptatibus commodi aliquam
-      numquam consectetur repellat aspernatur ab a soluta. Odio voluptas quod eveniet? Praesentium eaque culpa saepe
-      facilis!
-    </p>
+    <div class="w-20 h-10 fixed bg-green z-1"></div>
+    <div class="w-30 h-10 fixed bg-red z-2"></div>
+    <div class="w-40 h-10 fixed bg-blue z-3"></div>
   </body>
 </html>

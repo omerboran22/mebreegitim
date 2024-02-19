@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Özel Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      footer {
+        display: block;
+        width: 100%;
+        height: fit-content;
+
+        background-color: #333;
+        color: #fff;
+      }
+      .col-3 {
+        width: 33%;
+      }
+      .w-50 {
+        width: 49%;
+      }
+      .w-100 {
+        width: 100%;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-right {
+        text-align: right;
+      }
+      .py-5 {
+        padding: 25px 0;
+      }
+      .my-5 {
+        margin: 25px 0;
+      }
+      .d-inline-block {
+        display: inline-block;
+      }
+      .container {
+        padding: 40px 20px;
+      }
+      .container h2 {
+        font-size: 1.5rem;
+      }
+      .container ul {
+        list-style-type: none;
+      }
+      .container ul li {
+        list-style: none;
+        margin: 10px;
+      }
+      .container ul li a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .container ul li a:hover {
+        color: rgb(5, 153, 227);
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-group button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: #0056b3;
+      }
+      .social-list {
+        margin: 0 10px;
+      }
+      .social-list li {
+        list-style: none;
+        margin: 10px;
+      }
+      .social-list li a {
+        color: #ccc;
+      }
+      .social-list li a:hover {
+        color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="container">
+        <div class="w-50 d-inline-block">
+          <h2>Ömer Can Boran</h2>
+        </div>
+        <div class="w-50 d-inline-block">
+          <ul class="text-right">
+            <li class="d-inline-block"><a href="#">Anasayfa</a></li>
+            <li class="d-inline-block"><a href="#">Hakkımda</a></li>
+            <li class="d-inline-block"><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="w-100 text-center py-5 my-5">&copy; 2024 Benim Web Sitem. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <footer>
+      <div class="container vertical-middle">
+        <div class="col-3 d-inline-block">
+          <h2>Ömer Can Boran</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi vel eos reiciendis nobis, magnam itaque
+            minima aliquam, enim cupiditate quaerat tenetur quo dolorem cum eaque iure adipisci veniam, aut soluta.
+          </p>
+        </div>
+        <div class="col-3 d-inline-block">
+          <ul class="text-center">
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hakkımda</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="col-3 text-center d-inline-block">
+          <form action="#" method="post">
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required />
+            </div>
+            <div class="form-group">
+              <button type="submit">Abone Ol</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="w-100 text-center my-5">
+        <ul class="social-list">
+          <li class="d-inline-block">
+            <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+          </li>
+          <li class="d-inline-block">
+            <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
+          </li>
+          <li class="d-inline-block">
+            <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="w-100 text-center py-5 my-5">&copy; 2024 Benim Web Sitem. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

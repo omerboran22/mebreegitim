@@ -3,64 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>background</title>
+    <title>Arka Plan Özellikleri</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      .bg-color-red {
+      .box {
+        width: 100%;
+        height: 600px;
+        opacity: 0.3;
+      }
+      .bg-green {
+        background-color: rgba(0, 128, 0, 1);
+      }
+      .bg-red {
         background-color: red;
       }
-      .bg-color-green {
-        background-color: green;
-      }
-      .bg-color-blue {
+      .bg-blue {
         background-color: blue;
       }
-      .bg-image {
-        background-image: url('https://picsum.photos/600/600');
-      }
-      .bg-repeat {
-        background-repeat: repeat;
-      }
-      .bg-norepeat {
-        background-repeat: no-repeat;
-      }
-      .bg-position {
-        background-position: center top;
-      }
-      .bg-size {
-        background-size: cover;
-      }
-      .bg-attachment {
-        background-attachment: fixed;
-      }
       .bg-fixed {
-        background-color: #f2f2f2;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
+        width: 100%;
+        height: 600px;
         background-attachment: fixed;
-        width: 100%;
-        height: 800px;
-      }
-      div {
-        width: 100%;
-        height: 500px;
       }
     </style>
   </head>
   <body>
-    <div style="height: 100px">
-      <h1>başlık</h1>
-      <p>icerik</p>
-    </div>
+    <div class="box bg-green"></div>
     <div class="bg-fixed" style="background-image: url(https://picsum.photos/1000/800)"></div>
-    <div class="bg-color-red"></div>
-    <div class="bg-color-green"></div>
+    <div class="box bg-red"></div>
+    <div class="box bg-blue"></div>
     <div class="bg-fixed" style="background-image: url(https://picsum.photos/800/1000)"></div>
-    <div class="bg-color-blue"></div>
   </body>
 </html>

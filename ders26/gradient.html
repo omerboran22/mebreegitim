@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient</title>
+    <style>
+      .linear-gradient-1 {
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(90deg, red 100px, orange 200px, blue 300px, green 400px);
+      }
+      .linear-gradient-2 {
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to bottom left, red 10%, orange 20% 50%, yellow 60%);
+      }
+      .radial-gradient-1 {
+        width: 100%;
+        height: 300px;
+        background: radial-gradient(at left bottom, green 20%, blue 60%, red);
+      }
+      .radial-gradient-2 {
+        width: 100%;
+        height: 300px;
+        background-image: ;
+        background-image: linear-gradient(to left, transparent, rgba(3, 253, 3, 0.2)),
+          linear-gradient(to right, transparent, rgba(3, 253, 3, 0.2)), url('https://picsum.photos/1000/800');
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linear-gradient-1"></div>
+    <div class="linear-gradient-2"></div>
+    <div class="radial-gradient-1"></div>
+    <div class="radial-gradient-2"></div>
+  </body>
+</html>

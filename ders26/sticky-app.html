@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Uygulama</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      header {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        position: sticky;
+        top: 0px;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 0;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      li:first-child {
+        color: red;
+      }
+      li:nth-child(2) {
+        color: green;
+      }
+      li:nth-child(3) {
+        color: aqua;
+      }
+      li:last-child {
+        color: deeppink;
+      }
+      section {
+        width: 100%;
+        height: 100vh;
+      }
+      #home {
+        background-color: red;
+      }
+      #blog {
+        background-color: green;
+      }
+      #about {
+        background-color: aqua;
+      }
+      #contact {
+        background-color: deeppink;
+      }
+      .scroll-top {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home"> Anasayfa </a>
+          </li>
+          <li>
+            <a href="#blog"> Blog </a>
+          </li>
+          <li>
+            <a href="#about"> Hakkımızda </a>
+          </li>
+          <li>
+            <a href="#contact"> İletişim </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home"></section>
+    <section id="blog"></section>
+    <section id="about"></section>
+    <section id="contact"></section>
+    <a class="scroll-top" href="#home">Yukarı</a>
+  </body>
+</html>
