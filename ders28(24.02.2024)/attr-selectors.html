@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Attribute Selector</title>
+    <style>
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      a[href] {
+        color: red;
+      }
+      a[href='https://google.com']
+      {
+        color: green;
+      }
+      a[href^='omerboran.dev'] {
+        color: #e85ad7;
+        border: 2px solid black;
+      }
+      a[href*='ders28'] {
+        color: blue;
+        font-size: 25px;
+      }
+      a[href$='.edu.tr'] {
+        color: black;
+        border: 5px dashed black;
+      }
+      a[class~='logo'] {
+        color: #ab0fa3;
+        border: #ab0fa3 5px solid;
+      }
+      a[class|='box'] {
+        color: #3de213;
+        border: #3de213 5px solid;
+      }
+      [class*='raunded' i] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Bir Yerler Git</a>
+    <a href="https://google.com">Google</a>
+    <a href="omerboran.dev/merhba">baslangic</a>
+    <a href="https://youtube.com">Youtube</a>
+    <a href="https://afyonmyo.aku.edu.tr">Aftyon Universitve</a>
+    <a href="https://www.turkiye.gov">E-Devlet</a>
+    <a href="#" class="logo container">Test Logo</a>
+    <a href="#" class="box-small">Box Test</a>
+    <a href="#" class="border-black-1 RAUNDED">Büyük küçük Kontrol</a>
+  </body>
+</html>

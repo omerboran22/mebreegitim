@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 20px;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      .container {
+        font-size: 25px;
+      }
+      .box {
+        width: 10em; /* bağlı olduğu element *em 25px*10rem=px */
+        height: 10em;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Root Font size göre hesaplama yapılıyor. 20px*3rem=60px</h1>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

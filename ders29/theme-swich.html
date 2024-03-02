@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme light/Dark Mode</title>
+    <style>
+      :root {
+        --main-bg-color: #f4f4f4;
+        --main-color: #333;
+        --main-border-radius: 5px;
+        --main-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        --main-border-color: #ccc;
+        --main-button-primary: #007bff;
+      }
+      [data-theme='dark'] {
+        --main-bg-color: #333;
+        --main-color: #000;
+        --main-box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        --main-border-color: #fff;
+        --main-button-primary: #ccc;
+      }
+      body {
+        background-color: var(--main-bg-color);
+        color: var(--main-color);
+      }
+      .theme-switch-wrapper {
+        display: inline-block;
+        width: 15%;
+        transition: all 0.3s ease-in-out;
+      }
+      .theme-switch-wrapper input {
+        display: none;
+      }
+      .theme-switch-wrapper label * {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+      }
+      .theme-switch-wrapper .slide {
+        width: 60px;
+        height: 30px;
+        background-color: #ccc;
+        border-radius: 20px;
+        position: relative;
+      }
+      .theme-switch-wrapper .slide:before {
+        content: '';
+        width: 23px;
+        height: 23px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+      }
+      .theme-switch-wrapper input:checked + label .slide {
+        background-color: green;
+      }
+      .theme-switch-wrapper input:checked + label .slide:before {
+        right: 3px;
+        left: auto;
+      }
+
+      .container {
+        background-color: var(--main-bg-color);
+        padding: 20px;
+        margin: 10px 0;
+        border-radius: var(--main-border-radius);
+        box-shadow: var(--main-box-shadow);
+      }
+
+      header {
+        background-color: var(--main-bg-color);
+        color: var(--main-color);
+        padding: 20px;
+      }
+      .flex-container {
+        display: flex;
+      }
+
+      .flex-item {
+        margin-right: 10px; /* Öğeler arasında sağ tarafa 10 piksel boşluk */
+      }
+
+      .flex-item:last-child {
+        margin-right: 0; /* Son öğenin sağ tarafa margin eklenmemesi */
+      }
+
+      header h1 {
+        margin: 0;
+        display: inline-block;
+        width: 10%;
+      }
+      nav {
+        display: inline-block;
+        text-align: center;
+        width: 70%;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+
+      nav ul li a {
+        color: var(--main-color); /* Change link color as needed */
+        text-decoration: none;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .form-group input[type='text'] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid var(--main-border-color);
+        box-sizing: border-box;
+      }
+
+      .form-group input[type='email'] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid var(--main-border-color);
+        box-sizing: border-box;
+      }
+      .form-group input[type='email']:focus {
+        border-color: var(--main-button-primary);
+      }
+      .form-group input[type='password'] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid var(--main-border-color);
+        box-sizing: border-box;
+      }
+      .form-group input[type='submit'] {
+        background-color: var(--main-button-primary);
+        color: var(--main-border-color);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body data-theme="light">
+    <header>
+      <h1>Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkında</a></li>
+          <li><a href="#">Hizmetler</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="theme-switch-wrapper">
+        <input type="checkbox" id="changeTheme" name="changeTheme" />
+        <label for="changeTheme">
+          <div class="slide"></div>
+          <b> Tema Değiştir</b>
+        </label>
+      </div>
+    </header>
+
+    <div class="container">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="useranme">Kullanıcı Adı:</label>
+          <input type="text" id="useranme" name="useranme" placeholder="omerboran22" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Şifre:</label>
+          <input type="password" id="password" name="password" placeholder="*******" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Giriş Yap" />
+        </div>
+      </form>
+    </div>
+
+    <script>
+      const toogleSwitch = document.querySelector('input[type="checkbox"]');
+      const body = document.querySelector('body');
+      toogleSwitch.addEventListener('change', function () {
+        if (this.checked) {
+          body.setAttribute('data-theme', 'dark');
+        } else {
+          body.setAttribute('data-theme', 'light');
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css variables</title>
+    <style>
+      .dark {
+        --bg-color-primary: red;
+        --color-primary: white;
+        --border-primary: 1px solid red;
+      }
+      :root {
+        --bg-color: #fff;
+        --color: #000;
+        --w-sm: 300px;
+        --w-md: 500px;
+        --w-lg: 700px;
+        --border-black: 1px solid black;
+        --bg-color-succes: green;
+        --bg-color-danger: red;
+        --bg-color-primary: blue;
+        --color-primary: white;
+        --border-primary: 1px solid blue;
+      }
+
+      .button-primary {
+        background-color: var(--bg-color-primary);
+        color: var(--color-primary);
+        border: var(--border-primary);
+      }
+      .container {
+        background-color: var(--bg-color);
+        color: var(--color);
+        width: var(--w-lg);
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: var(--border-black);
+        background-color: var(--bg-color-succes);
+      }
+
+      h1 {
+        color: var(--color);
+      }
+      .button-succes {
+        background-color: var(--bg-color-succes);
+      }
+      .button-danger {
+        background-color: var(--bg-color-danger);
+      }
+    </style>
+  </head>
+  <body class="dark">
+    <button class="button-primary">Gonder</button>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

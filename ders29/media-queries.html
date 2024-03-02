@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      h1 {
+        font-size: 2rem;
+        color: red;
+      }
+      span {
+        color: blue;
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1rem;
+          background-color: green;
+        }
+        .image {
+          background-image: url('https://picsum.photos/200/200');
+          width: 400px;
+          height: 400px;
+        }
+      }
+      @media (min-width: 480px) and (max-width: 576px) {
+        h1 {
+          font-size: 1rem;
+          background-color: green;
+        }
+        .image {
+          background-image: url('https://picsum.photos/400/400');
+          width: 400px;
+          height: 400px;
+        }
+      }
+      @media (min-width: 576px) and (max-width: 768px) {
+        h1 {
+          font-size: 1.5rem;
+          background-color: yellow;
+        }
+        .image {
+          background-image: url('https://picsum.photos/600/600');
+          width: 600px;
+          height: 600px;
+        }
+      }
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .image {
+          background-image: url('https://picsum.photos/800/800');
+          width: 800px;
+          height: 800px;
+        }
+      }
+      @media (min-width: 1024px) {
+        .image {
+          background-image: url('https://picsum.photos/1000/1000');
+          width: 1000px;
+          height: 1000px;
+        }
+      }
+      @media (width: 360px) {
+        div {
+          color: red;
+        }
+      }
+      /* Exact height */
+      @media (height: 360px) {
+        .box {
+          background: red;
+          height: 360px;
+          width: 360px;
+        }
+      }
+
+      /* Minimum height */
+      @media (min-height: 400px) {
+        .box {
+          background: yellow;
+          height: 400px;
+          width: 400px;
+        }
+      }
+
+      /* Maximum height */
+      @media (max-height: 800px) {
+        .box {
+          max-width: 800px;
+          max-height: 800px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Merhaba Benim Adım <span>Ömer</span></h1>
+    <div class="image"></div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates reiciendis asperiores a aut autem quas ab at
+      nisi illum enim consequuntur nemo labore error eum, magnam perspiciatis vel iste exercitationem!
+    </div>
+    <div class="box"></div>
+  </body>
+</html>
