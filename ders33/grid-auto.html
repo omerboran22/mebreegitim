@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Auto Columns ve Rows Örneği</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 100px auto; /* İlk iki sütun için genişlik belirtilmiş */
+        grid-auto-columns: 300px; /* Otomatik olarak oluşturulan sütunların genişliği */
+        grid-auto-rows: 50px; /* Otomatik olarak oluşturulan satırların yüksekliği */
+        gap: 10px; /* Öğeler arasında boşluk */
+        background-color: lightgray;
+        padding: 10px;
+      }
+
+      .item {
+        background-color: lightblue;
+        border: 1px solid darkblue;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">5</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>

@@ -8,7 +8,8 @@
       .box {
         width: 400px;
         height: 400px;
-        background-color: rgb(208, 150, 150);
+        /* background-color: rgb(208, 150, 150); */
+        background-image: url('https://fastly.picsum.photos/id/284/400/400.jpg?hmac=Tn_z1l1ypYE13fJPWa0wr-Tw3Y-AbKACIXt-us3ulLs');
       }
       .clippath-inset {
         /* inset(top right bottom left) */
@@ -33,13 +34,7 @@
     </style>
   </head>
   <body>
-    <div class="box">
-      <img
-        class="clippath"
-        src="https://fastly.picsum.photos/id/212/800/400.jpg?hmac=BeiCPceCzNl4BMSPDz2T5Q-e7zI2yb6UIzT_1MvQtkc"
-        alt=""
-      />
-    </div>
+    <div class="box clippath-inset"></div>
     <svg width="0" height="0">
       <clipPath id="clippath">
         <ellipse cx="205" cy="200" rx="100" ry="150" />

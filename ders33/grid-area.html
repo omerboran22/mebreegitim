@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area Örneği</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header'
+          'sidebar main main'
+          'footer footer footer';
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 300px;
+      }
+
+      .item {
+        background-color: lightblue;
+        padding: 20px;
+        border: 1px solid darkblue;
+      }
+
+      .header {
+        grid-area: header;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .main {
+        grid-area: main;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item header">Header</div>
+      <div class="item sidebar">Sidebar</div>
+      <div class="item main">Main Content</div>
+      <div class="item footer">Footer</div>
+    </div>
+  </body>
+</html>

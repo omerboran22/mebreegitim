@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+      }
+
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin-right: 20px;
+      }
+
+      .nav-links li:last-child {
+        margin-right: 0;
+      }
+
+      .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .login-icon img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Logo</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">Hizmetler</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+      <div class="login-icon">
+        <a href="#">
+          <img src="https://picsum.photos/50/50" alt="Giriş" />
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>

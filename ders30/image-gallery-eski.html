@@ -3,27 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>İmage Gallery</title>
+    <title>Fotoğraf Galerisi</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
+      body {
+        background-color: #001a33 !important;
+      }
       .container {
         display: flex;
-        flex-direction: row;
-        gap: 10px;
-        padding: 10px;
+        width: 100%;
+        justify-content: center;
+        padding: 40px 20px;
       }
       .image-gallery {
         display: flex;
+        width: 30%;
+        height: auto;
         flex-direction: column;
-        gap: 10px;
       }
-      .image-gallery img:hover {
-        box-shadow: 4px 4px 25px black;
+
+      .image-gallery img {
+        object-fit: cover;
+        background-color: white;
+        box-shadow: 2px 2px 20px gray, inset 2px 2px 10px lightgray;
+      }
+      img:hover {
+        box-shadow: 4px 4px 25px black, inset 2px 2px 2px 10px rgb(0, 0, 20);
         cursor: pointer;
+      }
+      .image-card {
+        position: relative;
+        width: 25%;
+        margin: 5px;
+      }
+      .image-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .image-card .image-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        visibility: hidden;
+      }
+      .image-card:hover .image-content {
+        visibility: visible;
       }
     </style>
   </head>
@@ -57,6 +91,32 @@
         />
         <img src="https://source.unsplash.com/kXLgdCmmGYk" width="100%" height="auto" />
         <img src="https://source.unsplash.com/OiiVv1iiB0A" width="100%" height="auto" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="image-card">
+        <img src="https://picsum.photos/400/400" alt="" />
+        <div class="image-content">
+          <h1>Image Content</h1>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://picsum.photos/400/400" alt="" />
+        <div class="image-content">
+          <h1>Image Content</h1>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://picsum.photos/400/400" alt="" />
+        <div class="image-content">
+          <h1>Image Content</h1>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://picsum.photos/400/400" alt="" />
+        <div class="image-content">
+          <h1>Image Content</h1>
+        </div>
       </div>
     </div>
   </body>
