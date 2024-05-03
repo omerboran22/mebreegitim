@@ -1,0 +1,198 @@
+:root {
+  --primary-bg-color: #aa8453;
+  --primary-text-color: #fff;
+  --bg-cream: #dcc8a8;
+  --primary-font: 'Poppins', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  width: 100%;
+  padding-top: 10px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 250px;
+  height: 75px;
+}
+
+header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  color: var(--primary-text-color);
+  padding: 5px 10px;
+}
+
+header nav ul li:hover {
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav button {
+  background-color: var(--primary-bg-color) !important;
+  border-color: var(--primary-bg-color) !important;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.slider .slider-item {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://vplushotel.com/upload/vplus-hotel-3066.jpg);
+}
+
+.slider .slider-text {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.slider .rez-form {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rez-form .form-group input,
+.rez-form .form-group select {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: #222;
+  padding: 19.5px 40px 20px 19.5px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.rez-form button {
+  background-color: var(--primary-bg-color);
+  padding: 19.5px 40px 20px 19.5px;
+  border: none;
+  color: var(--primary-text-color);
+}
+
+.rez-contact {
+  color: var(--primary-bg-color);
+}
+.rez-contact a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+}
+
+.rez-contact span {
+  color: #000;
+}
+
+.about-images {
+  display: flex;
+  gap: 5px;
+}
+
+.about-images img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.footer-bottom span {
+  display: inline-block;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+
+.footer-top > * {
+  flex: 1;
+
+  padding: 20px;
+}
+
+.about {
+  flex: 2 !important;
+}
+
+.footer-top img {
+  max-width: 250px;
+}
+
+.footer-top .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}

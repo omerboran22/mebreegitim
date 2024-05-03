@@ -94,11 +94,12 @@ header nav ul li a:hover {
 
 .slider-text {
   position: absolute;
-  left: 45%;
+  left: 35%;
   bottom: 50%;
   z-index: 99;
   text-align: center;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .reservation-card {
@@ -208,7 +209,8 @@ header nav ul li a:hover {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  background-color: var(--bg-cream);
+  background: url(https://vplushotel.com/upload/vplus-hotel-7373.jpg) var(--bg-cream);
+  background-attachment: fixed;
 }
 
 .rooms-section .rooms {
@@ -245,7 +247,7 @@ header nav ul li a:hover {
 
 .services-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .services-section .services {
@@ -351,4 +353,23 @@ footer .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* contact Page */
+.page-banner {
+  background: no-repeat center center/cover;
+  min-height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
 }
