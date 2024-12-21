@@ -16,7 +16,7 @@
   border-bottom-color: black;
   /* köşe yuvarlama */
   border-radius: 15% 0;
-  display: inline-block;
+  display: block;
 }
 
 .kutu {
